@@ -40,6 +40,16 @@
       "import": "./dist/menu/index.js"
     },
     "./menu/style": "./dist/menu/style/index.css",
+    "./radio": {
+      "types": "./dist/radio/index.d.ts",
+      "import": "./dist/radio/index.js"
+    },
+    "./radio/style": "./dist/radio/style/index.css",
+    "./switch": {
+      "types": "./dist/switch/index.d.ts",
+      "import": "./dist/switch/index.js"
+    },
+    "./switch/style": "./dist/switch/style/index.css",
     "./tabs": {
       "types": "./dist/tabs/index.d.ts",
       "import": "./dist/tabs/index.js"
