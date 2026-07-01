@@ -64,6 +64,30 @@ export const buttonTokens: TokenMap = {
   buttonDisabledBorder: semanticColors.colorBorder,
 } as const;
 
+// ============ Checkbox Component Tokens ============
+export const checkboxTokens: TokenMap = {
+  checkboxSize: '14px',
+  checkboxBorderRadius: semanticSizes.radiusSmall,
+  checkboxBorderColor: semanticColors.colorBorder,
+  checkboxBgColor: semanticColors.colorBg,
+  checkboxCheckedBgColor: semanticColors.colorPrimary,
+  checkboxCheckedBorderColor: semanticColors.colorPrimary,
+  checkboxDisabledBgColor: semanticColors.colorBgDisabled,
+  checkboxDisabledBorderColor: semanticColors.colorBorder,
+  checkboxDisabledTextColor: semanticColors.colorTextDisabled,
+  checkboxCheckIconColor: '#ffffff',
+  checkboxFontSize: '14px',
+  checkboxFontSizeSmall: '12px',
+  checkboxFontSizeMedium: '14px',
+  checkboxFontSizeLarge: '16px',
+  checkboxGap: '8px',
+  checkboxGapSmall: '6px',
+  checkboxGapMedium: '8px',
+  checkboxGapLarge: '10px',
+  checkboxBorderPadding: '5px 12px',
+  checkboxGroupGap: '16px',
+} as const;
+
 // ============ Input Component Tokens ============
 export const inputTokens: TokenMap = {
   inputHeightSmall: semanticSizes.heightSmall,

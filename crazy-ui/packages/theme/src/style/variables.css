@@ -144,4 +144,26 @@
   --input-padding-small: 0 var(--spacing-sm);
   --input-padding-medium: 0 var(--spacing-md);
   --input-padding-large: 0 var(--spacing-lg);
+
+  /* ============ Checkbox Component Tokens ============ */
+  --checkbox-size: 14px;
+  --checkbox-border-radius: var(--radius-small);
+  --checkbox-border-color: var(--color-border);
+  --checkbox-bg-color: var(--color-bg);
+  --checkbox-checked-bg-color: var(--color-primary);
+  --checkbox-checked-border-color: var(--color-primary);
+  --checkbox-disabled-bg-color: var(--color-bg-disabled);
+  --checkbox-disabled-border-color: var(--color-border);
+  --checkbox-disabled-text-color: var(--color-text-disabled);
+  --checkbox-check-icon-color: #ffffff;
+  --checkbox-font-size: 14px;
+  --checkbox-font-size-small: 12px;
+  --checkbox-font-size-medium: 14px;
+  --checkbox-font-size-large: 16px;
+  --checkbox-gap: 8px;
+  --checkbox-gap-small: 6px;
+  --checkbox-gap-medium: 8px;
+  --checkbox-gap-large: 10px;
+  --checkbox-border-padding: 5px 12px;
+  --checkbox-group-gap: 16px;
 }

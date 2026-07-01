@@ -19,7 +19,12 @@
       "types": "./dist/input/index.d.ts",
       "import": "./dist/input/index.js"
     },
-    "./input/style": "./dist/input/style/index.css"
+    "./input/style": "./dist/input/style/index.css",
+    "./checkbox": {
+      "types": "./dist/checkbox/index.d.ts",
+      "import": "./dist/checkbox/index.js"
+    },
+    "./checkbox/style": "./dist/checkbox/style/index.css"
   },
   "files": [
     "dist"

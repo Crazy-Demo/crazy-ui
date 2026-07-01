@@ -1,0 +1,191 @@
+/**
+ * Radio Component Styles
+ *
+ * Uses CSS variables from the theme package.
+ */
+
+/* ============ Radio Label (root) ============ */
+.crazy-radio {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  font-size: var(--radio-font-size, 14px);
+  gap: var(--radio-gap, 8px);
+  vertical-align: middle;
+}
+
+/* ============ Size Variants ============ */
+.crazy-radio--small {
+  font-size: var(--radio-font-size-small, 12px);
+  gap: var(--radio-gap-small, 6px);
+}
+.crazy-radio--medium {
+  font-size: var(--radio-font-size-medium, 14px);
+  gap: var(--radio-gap-medium, 8px);
+}
+.crazy-radio--large {
+  font-size: var(--radio-font-size-large, 16px);
+  gap: var(--radio-gap-large, 10px);
+}
+
+/* ============ Hidden Native Input ============ */
+.crazy-radio__original {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  margin: 0;
+  pointer-events: none;
+}
+
+/* ============ Input wrapper ============ */
+.crazy-radio__input {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  line-height: 1;
+}
+
+/* ============ Visible Radio Circle (inner) ============ */
+.crazy-radio__inner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: var(--radio-size, 14px);
+  height: var(--radio-size, 14px);
+  border: 1px solid var(--radio-border-color, var(--color-border));
+  border-radius: 50%;
+  background: var(--radio-bg-color, var(--color-bg));
+  transition: all 0.2s;
+  flex-shrink: 0;
+  position: relative;
+}
+
+/* ============ Checked State ============ */
+.crazy-radio.is-checked .crazy-radio__inner {
+  border-color: var(--radio-checked-border-color, var(--color-primary));
+}
+
+.crazy-radio.is-checked .crazy-radio__inner::after {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--radio-checked-dot-color, var(--color-primary));
+  display: block;
+}
+
+/* ============ Disabled State ============ */
+.crazy-radio.is-disabled {
+  cursor: not-allowed;
+}
+
+.crazy-radio.is-disabled .crazy-radio__inner {
+  background-color: var(--radio-disabled-bg-color, var(--color-bg-disabled));
+  border-color: var(--radio-disabled-border-color, var(--color-border));
+  cursor: not-allowed;
+}
+
+.crazy-radio.is-disabled .crazy-radio__label {
+  color: var(--radio-disabled-text-color, var(--color-text-disabled));
+  cursor: not-allowed;
+}
+
+.crazy-radio.is-disabled.is-checked .crazy-radio__inner::after {
+  background: var(--radio-disabled-text-color, var(--color-text-disabled));
+}
+
+/* ============ Border Variant ============ */
+.crazy-radio.is-border {
+  padding: var(--radio-border-padding, 5px 12px);
+  border: 1px solid var(--radio-border-color, var(--color-border));
+  border-radius: var(--radius-medium, 4px);
+  transition: border-color 0.2s;
+}
+
+.crazy-radio.is-border.is-checked {
+  border-color: var(--radio-checked-border-color, var(--color-primary));
+}
+
+/* ============ Radio Label Text ============ */
+.crazy-radio__label {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* ============ RadioGroup ============ */
+.crazy-radio-group {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--radio-group-gap, 16px);
+}
+
+.crazy-radio-group.is-disabled {
+  cursor: not-allowed;
+}
+
+/* ============ RadioButton ============ */
+.crazy-radio-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  border: 1px solid var(--radio-button-border-color, var(--color-border));
+  background: var(--radio-button-bg-color, var(--color-bg));
+  color: var(--radio-button-text-color, var(--color-text));
+  padding: var(--radio-button-padding, 5px 16px);
+  font-size: var(--radio-button-font-size, 14px);
+  transition: all 0.2s;
+}
+
+.crazy-radio-button:first-child {
+  border-radius: var(--radius-medium, 4px) 0 0 var(--radius-medium, 4px);
+}
+
+.crazy-radio-button:last-child {
+  border-radius: 0 var(--radius-medium, 4px) var(--radius-medium, 4px) 0;
+}
+
+.crazy-radio-button:not(:last-child) {
+  border-right: none;
+}
+
+.crazy-radio-button.is-checked {
+  background: var(--radio-button-checked-bg-color, var(--color-primary));
+  color: var(--radio-button-checked-text-color, #ffffff);
+  border-color: var(--radio-button-checked-border-color, var(--color-primary));
+}
+
+.crazy-radio-button.is-disabled {
+  cursor: not-allowed;
+  background: var(--radio-button-disabled-bg-color, var(--color-bg-disabled));
+  color: var(--radio-button-disabled-text-color, var(--color-text-disabled));
+  border-color: var(--radio-button-disabled-border-color, var(--color-border));
+}
+
+.crazy-radio-button.is-disabled.is-checked {
+  opacity: 0.6;
+}
+
+.crazy-radio-button__original {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+  width: 0;
+  height: 0;
+  margin: 0;
+  pointer-events: none;
+}
+
+.crazy-radio-button__label {
+  display: inline-flex;
+  align-items: center;
+}
