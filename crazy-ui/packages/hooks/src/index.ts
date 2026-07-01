@@ -7,4 +7,5 @@
 
 // Public API
 export * from './context';
+export * from './overlay';
 export * from './state';

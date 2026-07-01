@@ -1,3 +1,8 @@
-// Overlay hooks — 第二阶段实现
-// useOverlay, useOverlayManager, useModelToggle, useTeleport,
-// useFocusTrap, useScrollLock, useClickOutside, useEscapeKey, usePosition
+export { useClickOutside } from './use-click-outside';
+export type { UseClickOutsideOptions } from './use-click-outside';
+export { useEscapeKey } from './use-escape-key';
+export type { UseEscapeKeyOptions } from './use-escape-key';
+export { usePosition } from './use-position';
+export type { UsePositionOptions } from './use-position';
+export { useOverlayManager } from './use-overlay-manager';
+export type { OverlayInstance, OverlayManagerContext } from './use-overlay-manager';
