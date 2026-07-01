@@ -14,13 +14,18 @@
       "types": "./dist/button/index.d.ts",
       "import": "./dist/button/index.js"
     },
-    "./button/style": "./dist/button/style/index.css"
+    "./button/style": "./dist/button/style/index.css",
+    "./input": {
+      "types": "./dist/input/index.d.ts",
+      "import": "./dist/input/index.js"
+    },
+    "./input/style": "./dist/input/style/index.css"
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc --project tsconfig.json && cp -r button/style dist/button/",
+    "build": "tsc --project tsconfig.json && cp -r button/style dist/button/ && cp -r input/style dist/input/",
     "typecheck": "tsc --noEmit",
     "test": "vitest"
   },

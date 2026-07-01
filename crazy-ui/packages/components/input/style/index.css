@@ -1,0 +1,126 @@
+/* packages/components/input/style/index.css */
+
+.crazy-input {
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid var(--input-border-color);
+  border-radius: var(--input-border-radius);
+  background-color: var(--input-bg-color);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  padding: 0;
+}
+
+/* Size variants */
+.crazy-input--small  { height: var(--input-height-small);  font-size: var(--input-font-size-small); }
+.crazy-input--medium { height: var(--input-height-medium); font-size: var(--input-font-size-medium); }
+.crazy-input--large  { height: var(--input-height-large);  font-size: var(--input-font-size-large); }
+
+/* Focus state */
+.crazy-input.is-focus {
+  border-color: var(--input-focus-border-color);
+  box-shadow: 0 0 0 1px var(--input-focus-border-color) inset;
+}
+
+/* Status states — use CSS variables from theme, no hardcoded colors */
+.crazy-input.is-error {
+  border-color: var(--color-danger);
+  box-shadow: 0 0 0 1px var(--color-danger) inset;
+}
+.crazy-input.is-success {
+  border-color: var(--color-success);
+  box-shadow: 0 0 0 1px var(--color-success) inset;
+}
+.crazy-input.is-warning {
+  border-color: var(--color-warning);
+  box-shadow: 0 0 0 1px var(--color-warning) inset;
+}
+
+/* Disabled */
+.crazy-input.is-disabled {
+  cursor: not-allowed;
+  background-color: var(--input-disabled-bg-color);
+  opacity: 1;
+}
+.crazy-input.is-disabled .crazy-input__inner {
+  cursor: not-allowed;
+  color: var(--input-disabled-text-color);
+}
+
+/* Prefix / Suffix */
+.crazy-input__prefix,
+.crazy-input__suffix {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 0 8px;
+  color: var(--color-text-secondary);
+  font-size: inherit;
+}
+
+/* Inner input / textarea */
+.crazy-input__inner {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  color: var(--input-text-color);
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+.crazy-input__inner::placeholder {
+  color: var(--input-placeholder-color);
+}
+
+/* textarea specific */
+.crazy-input__inner--textarea {
+  resize: vertical;
+  padding: 8px;
+  line-height: 1.5;
+}
+
+/* Clear icon */
+.crazy-input__clear {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  font-size: 12px;
+  color: var(--color-text-disabled);
+  transition: color 0.2s;
+}
+.crazy-input__clear:hover {
+  color: var(--color-text-secondary);
+}
+
+/* Password toggle */
+.crazy-input__password {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
+  color: var(--color-text-disabled);
+  transition: color 0.2s;
+}
+.crazy-input__password:hover {
+  color: var(--color-text-secondary);
+}
+
+/* Word count */
+.crazy-input__count {
+  flex-shrink: 0;
+  padding: 0 8px;
+  font-size: 12px;
+  color: var(--color-text-disabled);
+}
+.crazy-input.is-exceed .crazy-input__count {
+  color: var(--color-danger);
+}
