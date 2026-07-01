@@ -1,0 +1,190 @@
+/* ========================================
+   Tabs Component Styles
+   ======================================== */
+
+/* ========== Root Tabs ========== */
+
+.crazy-tabs {
+  display: flex;
+}
+
+/* Position: top and bottom */
+.crazy-tabs--top {
+  flex-direction: column;
+}
+.crazy-tabs--bottom {
+  flex-direction: column-reverse;
+}
+
+/* Position: left and right */
+.crazy-tabs--left {
+  flex-direction: row;
+}
+.crazy-tabs--right {
+  flex-direction: row-reverse;
+}
+
+/* ========== Tab Header ========== */
+
+.crazy-tabs__header {
+  flex-shrink: 0;
+}
+
+.crazy-tabs__content {
+  flex: 1;
+  padding: 16px 0;
+}
+
+/* ========== Tab Nav ========== */
+
+.crazy-tab-nav {
+  display: flex;
+  position: relative;
+  border-bottom: 1px solid var(--tabs-nav-border-color, var(--color-border, #e0e0e0));
+  box-sizing: border-box;
+}
+
+.crazy-tab-nav.is-vertical {
+  flex-direction: column;
+  border-bottom: none;
+  border-right: 1px solid var(--tabs-nav-border-color, var(--color-border, #e0e0e0));
+}
+
+/* Stretch mode: items fill available width */
+.crazy-tab-nav.is-stretch {
+  display: flex;
+}
+.crazy-tab-nav.is-stretch .crazy-tab-nav__item {
+  flex: 1;
+  justify-content: center;
+}
+
+/* ========== Tab Nav Item ========== */
+
+.crazy-tab-nav__item {
+  display: flex;
+  align-items: center;
+  padding: 0 var(--tabs-item-padding-horizontal, 20px);
+  height: var(--tabs-item-height, 40px);
+  cursor: pointer;
+  font-size: var(--tabs-item-font-size, 14px);
+  color: var(--tabs-item-text-color, var(--color-text-secondary, #606266));
+  white-space: nowrap;
+  transition: color 0.2s;
+  position: relative;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.crazy-tab-nav__item:hover {
+  color: var(--tabs-item-hover-text-color, var(--color-primary, #409eff));
+}
+
+.crazy-tab-nav__item.is-active {
+  color: var(--tabs-item-active-text-color, var(--color-primary, #409eff));
+  font-weight: 500;
+}
+
+.crazy-tab-nav__item.is-disabled {
+  color: var(--tabs-item-disabled-text-color, var(--color-text-disabled, #c0c4cc));
+  cursor: not-allowed;
+}
+.crazy-tab-nav__item.is-disabled:hover {
+  color: var(--tabs-item-disabled-text-color, var(--color-text-disabled, #c0c4cc));
+}
+
+/* ========== Card Type ========== */
+
+.crazy-tab-nav__item--card {
+  border: 1px solid var(--tabs-card-border-color, var(--color-border, #e0e0e0));
+  border-bottom: none;
+  background: var(--tabs-card-bg-color, var(--color-bg-secondary, #f5f5f5));
+  margin-right: 2px;
+  border-radius: 4px 4px 0 0;
+}
+
+.crazy-tab-nav__item--card.is-active {
+  background: var(--tabs-card-active-bg-color, var(--color-bg, #ffffff));
+  border-bottom-color: var(--tabs-card-active-bg-color, var(--color-bg, #ffffff));
+}
+
+/* ========== Border-Card Type ========== */
+
+.crazy-tabs--border-card {
+  background: var(--tabs-border-card-bg-color, var(--color-bg, #ffffff));
+  border: 1px solid var(--tabs-border-card-border-color, var(--color-border, #e0e0e0));
+}
+
+/* ========== Tab Bar (Active Indicator) ========== */
+
+.crazy-tab-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: var(--tabs-bar-height, 2px);
+  background: var(--tabs-bar-color, var(--color-primary, #409eff));
+  transition: var(--tabs-bar-transition, transform 0.3s cubic-bezier(0.645, 0.045, 0.355, 1), width 0.3s cubic-bezier(0.645, 0.045, 0.355, 1));
+  z-index: 1;
+  pointer-events: none;
+}
+
+.crazy-tab-bar.is-vertical {
+  bottom: auto;
+  right: 0;
+  top: 0;
+  width: var(--tabs-bar-height, 2px);
+  height: auto;
+}
+
+/* ========== Close Button ========== */
+
+.crazy-tab-nav__close {
+  margin-left: 8px;
+  font-size: var(--tabs-close-size, 12px);
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.crazy-tab-nav__close:hover {
+  background: var(--tabs-close-hover-bg, var(--color-text-disabled, #c0c4cc));
+  color: #ffffff;
+}
+
+/* ========== Add Button ========== */
+
+.crazy-tab-nav__add {
+  margin-left: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+  color: var(--tabs-item-text-color, var(--color-text-secondary, #606266));
+}
+
+.crazy-tab-nav__add:hover {
+  background: var(--tabs-card-bg-color, var(--color-bg-secondary, #f5f5f5));
+}
+
+/* ========== Tab Pane Content ========== */
+
+.crazy-tab-pane {
+  padding: 0;
+}
+
+/* ========== Label Span ========== */
+
+.crazy-tab-nav__label {
+  display: inline-flex;
+  align-items: center;
+}

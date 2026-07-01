@@ -24,3 +24,6 @@ export { Select } from '../select';
 export type { SelectOption } from '../select';
 
 export { Menu, MenuItem, SubMenu, MenuItemGroup } from '../menu';
+
+export { Tabs, TabPane } from '../tabs';
+export type { TabsType, TabPosition, TabPaneState } from '../tabs';

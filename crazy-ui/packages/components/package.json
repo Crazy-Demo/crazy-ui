@@ -39,13 +39,18 @@
       "types": "./dist/menu/index.d.ts",
       "import": "./dist/menu/index.js"
     },
-    "./menu/style": "./dist/menu/style/index.css"
+    "./menu/style": "./dist/menu/style/index.css",
+    "./tabs": {
+      "types": "./dist/tabs/index.d.ts",
+      "import": "./dist/tabs/index.js"
+    },
+    "./tabs/style": "./dist/tabs/style/index.css"
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc --project tsconfig.json && cp -r button/style dist/button/ && cp -r input/style dist/input/ && cp -r input-number/style dist/input-number/ && cp -r select/style dist/select/ && cp -r menu/style dist/menu/",
+    "build": "tsc --project tsconfig.json && cp -r button/style dist/button/ && cp -r input/style dist/input/ && cp -r input-number/style dist/input-number/ && cp -r select/style dist/select/ && cp -r menu/style dist/menu/ && cp -r tabs/style dist/tabs/",
     "typecheck": "tsc --noEmit",
     "test": "vitest"
   },
