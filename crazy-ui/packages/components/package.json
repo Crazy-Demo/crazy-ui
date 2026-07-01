@@ -1,0 +1,44 @@
+{
+  "name": "@crazy-ui/components",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./dist/src/index.js",
+  "module": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "import": "./dist/src/index.js"
+    },
+    "./button": {
+      "types": "./dist/button/index.d.ts",
+      "import": "./dist/button/index.js"
+    },
+    "./button/style": "./dist/button/style/index.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc --project tsconfig.json && cp -r button/style dist/button/",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@crazy-ui/core": "workspace:*",
+    "@crazy-ui/hooks": "workspace:*",
+    "@crazy-ui/theme": "workspace:*",
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.2",
+    "@vue/test-utils": "^2.4.0"
+  },
+  "peerDependencies": {
+    "vue": "^3.3.0"
+  },
+  "keywords": ["crazy-ui", "vue", "components", "ui"],
+  "author": "",
+  "license": "MIT",
+  "description": "Vue 3 components for Crazy UI"
+}
