@@ -62,8 +62,10 @@ export const buttonTokens: TokenMap = {
   buttonDisabledBg: semanticColors.colorBgDisabled,
   buttonDisabledText: semanticColors.colorTextDisabled,
   buttonDisabledBorder: semanticColors.colorBorder,
+} as const;
 
-  // ============ Input Component Tokens ============
+// ============ Input Component Tokens ============
+export const inputTokens: TokenMap = {
   inputHeightSmall: semanticSizes.heightSmall,
   inputHeightMedium: semanticSizes.heightMedium,
   inputHeightLarge: semanticSizes.heightLarge,

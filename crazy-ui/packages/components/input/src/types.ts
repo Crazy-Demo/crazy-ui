@@ -26,10 +26,10 @@ export const inputProps = {
 } as const;
 
 export const inputEmits = {
-  'update:modelValue': (value: string | number) => true,
-  input: (value: string) => true,
-  change: (value: string | number) => true,
-  focus: (event: FocusEvent) => true,
-  blur: (event: FocusEvent) => true,
+  'update:modelValue': (_value: string | number) => true,
+  input: (_value: string) => true,
+  change: (_value: string | number) => true,
+  focus: (_event: FocusEvent) => true,
+  blur: (_event: FocusEvent) => true,
   clear: () => true,
 };
