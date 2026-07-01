@@ -1,0 +1,122 @@
+/* packages/components/input-number/style/index.css */
+
+/* ============ Base ============ */
+
+.crazy-input-number {
+  display: inline-flex;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1px solid var(--input-number-border-color);
+  border-radius: var(--input-number-border-radius);
+  background-color: var(--input-number-bg-color);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  width: 140px;
+  overflow: hidden;
+}
+
+/* Size variants */
+
+.crazy-input-number--small  { height: var(--input-number-height-small);  font-size: var(--input-number-font-size-small); }
+.crazy-input-number--medium { height: var(--input-number-height-medium); font-size: var(--input-number-font-size-medium); }
+.crazy-input-number--large  { height: var(--input-number-height-large);  font-size: var(--input-number-font-size-large); }
+
+/* Focus state */
+
+.crazy-input-number.is-focus {
+  border-color: var(--input-number-focus-border-color);
+  box-shadow: 0 0 0 1px var(--input-number-focus-border-color) inset;
+}
+
+/* Disabled state */
+
+.crazy-input-number.is-disabled {
+  cursor: not-allowed;
+  background-color: var(--input-number-disabled-bg-color);
+}
+.crazy-input-number.is-disabled .crazy-input-number__input {
+  cursor: not-allowed;
+  color: var(--input-number-disabled-text-color);
+}
+.crazy-input-number.is-disabled .crazy-input-number__decrease,
+.crazy-input-number.is-disabled .crazy-input-number__increase {
+  cursor: not-allowed;
+  color: var(--color-text-disabled);
+}
+.crazy-input-number.is-disabled .crazy-input-number__decrease:hover,
+.crazy-input-number.is-disabled .crazy-input-number__increase:hover {
+  color: var(--color-text-disabled);
+  background: transparent;
+}
+
+/* ============ Input element ============ */
+
+.crazy-input-number__input {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  color: var(--input-number-text-color);
+  text-align: center;
+  padding: 0 4px;
+  box-sizing: border-box;
+  min-width: 40px;
+}
+.crazy-input-number__input::placeholder {
+  color: var(--input-number-placeholder-color);
+}
+
+/* ============ Increase / Decrease buttons ============ */
+
+.crazy-input-number__decrease,
+.crazy-input-number__increase {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 100%;
+  cursor: pointer;
+  user-select: none;
+  color: var(--color-text-secondary);
+  font-size: 16px;
+  transition: all 0.2s;
+  flex-shrink: 0;
+}
+.crazy-input-number__decrease:hover,
+.crazy-input-number__increase:hover {
+  color: var(--color-primary);
+  background: var(--color-fill-light, var(--color-gray-50));
+}
+.crazy-input-number__decrease:active,
+.crazy-input-number__increase:active {
+  background: var(--color-gray-100);
+}
+
+/* ============ Controls position = 'right' ============ */
+
+.crazy-input-number--controls-right {
+  flex-direction: row;
+}
+
+.crazy-input-number--controls-right .crazy-input-number__controls-wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  border-left: 1px solid var(--input-number-border-color);
+  flex-shrink: 0;
+}
+
+.crazy-input-number--controls-right .crazy-input-number__increase,
+.crazy-input-number--controls-right .crazy-input-number__decrease {
+  height: 50%;
+  width: 28px;
+  font-size: 12px;
+  line-height: 1;
+}
+
+.crazy-input-number--controls-right .crazy-input-number__increase {
+  border-bottom: 1px solid var(--input-number-border-color);
+}

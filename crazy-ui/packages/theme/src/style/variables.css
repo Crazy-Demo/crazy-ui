@@ -145,6 +145,22 @@
   --input-padding-medium: 0 var(--spacing-md);
   --input-padding-large: 0 var(--spacing-lg);
 
+  /* ============ InputNumber Component Tokens ============ */
+  --input-number-height-small: var(--height-small);
+  --input-number-height-medium: var(--height-medium);
+  --input-number-height-large: var(--height-large);
+  --input-number-border-color: var(--color-border);
+  --input-number-focus-border-color: var(--color-primary);
+  --input-number-border-radius: var(--radius-medium);
+  --input-number-bg-color: var(--color-bg);
+  --input-number-disabled-bg-color: var(--color-bg-disabled);
+  --input-number-text-color: var(--color-text);
+  --input-number-placeholder-color: var(--color-text-disabled);
+  --input-number-disabled-text-color: var(--color-text-disabled);
+  --input-number-font-size-small: 12px;
+  --input-number-font-size-medium: 14px;
+  --input-number-font-size-large: 16px;
+
   /* ============ Checkbox Component Tokens ============ */
   --checkbox-size: 14px;
   --checkbox-border-radius: var(--radius-small);

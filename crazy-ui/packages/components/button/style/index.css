@@ -1,0 +1,253 @@
+/**
+ * Button Component Styles
+ *
+ * 使用 CSS 变量（来自 theme 包）而不是写死样式值
+ */
+
+.crazy-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s;
+  font-weight: 400;
+  white-space: nowrap;
+  outline: none;
+}
+
+/* ============ Size Variants ============ */
+.crazy-button--small {
+  height: var(--button-height-small);
+  padding: var(--button-padding-small);
+  font-size: var(--button-font-size-small);
+  border-radius: var(--button-border-radius);
+}
+
+.crazy-button--medium {
+  height: var(--button-height-medium);
+  padding: var(--button-padding-medium);
+  font-size: var(--button-font-size-medium);
+  border-radius: var(--button-border-radius);
+}
+
+.crazy-button--large {
+  height: var(--button-height-large);
+  padding: var(--button-padding-large);
+  font-size: var(--button-font-size-large);
+  border-radius: var(--button-border-radius);
+}
+
+/* ============ Solid Variant ============ */
+.crazy-button--solid.crazy-button--primary {
+  background-color: var(--button-primary-bg);
+  color: var(--button-primary-text);
+  border-color: var(--button-primary-border);
+}
+
+.crazy-button--solid.crazy-button--primary:hover:not(.is-disabled):not(.is-loading) {
+  background-color: var(--button-primary-bg-hover);
+}
+
+.crazy-button--solid.crazy-button--primary:active:not(.is-disabled):not(.is-loading) {
+  background-color: var(--button-primary-bg-active);
+}
+
+.crazy-button--solid.crazy-button--success {
+  background-color: var(--button-success-bg);
+  color: var(--button-success-text);
+  border-color: var(--button-success-border);
+}
+
+.crazy-button--solid.crazy-button--success:hover:not(.is-disabled):not(.is-loading) {
+  background-color: var(--button-success-bg-hover);
+}
+
+.crazy-button--solid.crazy-button--success:active:not(.is-disabled):not(.is-loading) {
+  background-color: var(--button-success-bg-active);
+}
+
+.crazy-button--solid.crazy-button--warning {
+  background-color: var(--button-warning-bg);
+  color: var(--button-warning-text);
+  border-color: var(--button-warning-border);
+}
+
+.crazy-button--solid.crazy-button--warning:hover:not(.is-disabled):not(.is-loading) {
+  background-color: var(--button-warning-bg-hover);
+}
+
+.crazy-button--solid.crazy-button--warning:active:not(.is-disabled):not(.is-loading) {
+  background-color: var(--button-warning-bg-active);
+}
+
+.crazy-button--solid.crazy-button--danger {
+  background-color: var(--button-danger-bg);
+  color: var(--button-danger-text);
+  border-color: var(--button-danger-border);
+}
+
+.crazy-button--solid.crazy-button--danger:hover:not(.is-disabled):not(.is-loading) {
+  background-color: var(--button-danger-bg-hover);
+}
+
+.crazy-button--solid.crazy-button--danger:active:not(.is-disabled):not(.is-loading) {
+  background-color: var(--button-danger-bg-active);
+}
+
+/* ============ Outline Variant ============ */
+.crazy-button--outline {
+  background-color: transparent;
+}
+
+.crazy-button--outline.crazy-button--primary {
+  color: var(--button-primary-bg);
+  border-color: var(--button-primary-border);
+}
+.crazy-button--outline.crazy-button--success {
+  color: var(--button-success-bg);
+  border-color: var(--button-success-border);
+}
+.crazy-button--outline.crazy-button--warning {
+  color: var(--button-warning-bg);
+  border-color: var(--button-warning-border);
+}
+.crazy-button--outline.crazy-button--danger {
+  color: var(--button-danger-bg);
+  border-color: var(--button-danger-border);
+}
+
+.crazy-button--outline.crazy-button--primary:hover:not(.is-disabled):not(.is-loading) {
+  background-color: var(--color-primary-bg);
+}
+.crazy-button--outline.crazy-button--success:hover:not(.is-disabled):not(.is-loading) {
+  background-color: var(--color-success-bg);
+}
+.crazy-button--outline.crazy-button--warning:hover:not(.is-disabled):not(.is-loading) {
+  background-color: var(--color-warning-bg);
+}
+.crazy-button--outline.crazy-button--danger:hover:not(.is-disabled):not(.is-loading) {
+  background-color: var(--color-danger-bg);
+}
+
+/* ============ Ghost Variant ============ */
+.crazy-button--ghost {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.crazy-button--ghost.crazy-button--primary  { color: var(--button-primary-bg); }
+.crazy-button--ghost.crazy-button--success  { color: var(--button-success-bg); }
+.crazy-button--ghost.crazy-button--warning  { color: var(--button-warning-bg); }
+.crazy-button--ghost.crazy-button--danger   { color: var(--button-danger-bg); }
+
+.crazy-button--ghost.crazy-button--primary:hover:not(.is-disabled):not(.is-loading) {
+  background-color: var(--color-primary-bg);
+}
+.crazy-button--ghost.crazy-button--success:hover:not(.is-disabled):not(.is-loading) {
+  background-color: var(--color-success-bg);
+}
+.crazy-button--ghost.crazy-button--warning:hover:not(.is-disabled):not(.is-loading) {
+  background-color: var(--color-warning-bg);
+}
+.crazy-button--ghost.crazy-button--danger:hover:not(.is-disabled):not(.is-loading) {
+  background-color: var(--color-danger-bg);
+}
+
+/* ============ Text Variant ============ */
+.crazy-button--text {
+  background-color: transparent;
+  border-color: transparent;
+  padding: 0;
+}
+
+.crazy-button--text.crazy-button--primary  { color: var(--button-primary-bg); }
+.crazy-button--text.crazy-button--success  { color: var(--button-success-bg); }
+.crazy-button--text.crazy-button--warning  { color: var(--button-warning-bg); }
+.crazy-button--text.crazy-button--danger   { color: var(--button-danger-bg); }
+
+.crazy-button--text.crazy-button--primary:hover:not(.is-disabled):not(.is-loading) {
+  color: var(--button-primary-bg-hover);
+}
+.crazy-button--text.crazy-button--success:hover:not(.is-disabled):not(.is-loading) {
+  color: var(--button-success-bg-hover);
+}
+.crazy-button--text.crazy-button--warning:hover:not(.is-disabled):not(.is-loading) {
+  color: var(--button-warning-bg-hover);
+}
+.crazy-button--text.crazy-button--danger:hover:not(.is-disabled):not(.is-loading) {
+  color: var(--button-danger-bg-hover);
+}
+
+/* ============ Disabled State ============ */
+.crazy-button.is-disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.crazy-button--solid.is-disabled {
+  background-color: var(--button-disabled-bg);
+  color: var(--button-disabled-text);
+  border-color: var(--button-disabled-border);
+}
+
+/* ============ Icon ============ */
+.crazy-button__icon {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.5em;
+}
+
+/* ============ Circle Shape ============ */
+.crazy-button--circle {
+  padding: 0;
+  border-radius: 50%;
+}
+.crazy-button--circle.crazy-button--small {
+  width: var(--button-height-small);
+  min-width: var(--button-height-small);
+}
+.crazy-button--circle.crazy-button--medium {
+  width: var(--button-height-medium);
+  min-width: var(--button-height-medium);
+}
+.crazy-button--circle.crazy-button--large {
+  width: var(--button-height-large);
+  min-width: var(--button-height-large);
+}
+.crazy-button--circle .crazy-button__icon {
+  margin-right: 0;
+}
+
+/* ============ Loading State ============ */
+.crazy-button.is-loading {
+  cursor: not-allowed;
+}
+
+.crazy-button__loading {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.5em;
+}
+
+.crazy-button__loading-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border: 0.15em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: crazy-button-spin 0.6s linear infinite;
+}
+
+@keyframes crazy-button-spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+.crazy-button__content {
+  display: inline-flex;
+  align-items: center;
+}

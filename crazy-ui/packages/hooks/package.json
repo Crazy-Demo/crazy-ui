@@ -1,0 +1,37 @@
+{
+  "name": "@crazy-ui/hooks",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./context/*": {
+      "types": "./dist/context/*/index.d.ts",
+      "import": "./dist/context/*/index.js"
+    },
+    "./state/*": {
+      "types": "./dist/state/*/index.d.ts",
+      "import": "./dist/state/*/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "vue": "^3.5.0"
+  },
+  "dependencies": {
+    "@crazy-ui/core": "workspace:*",
+    "@crazy-ui/utils": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "~6.0.2",
+    "vue": "^3.5.0"
+  }
+}

@@ -10,3 +10,6 @@ export type { InputType, Autosize } from '../input';
 
 export { Checkbox, CheckboxGroup } from '../checkbox';
 export type { CheckboxGroupContext } from '../checkbox';
+
+export { InputNumber } from '../input-number';
+export type { InputNumberProps } from '../input-number';

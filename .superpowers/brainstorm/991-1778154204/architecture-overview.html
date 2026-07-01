@@ -1,0 +1,47 @@
+<h2>企业级 UI 组件库推荐架构：Core + Vue Adapter</h2>
+<p class="subtitle">第一阶段落地 Vue 3，底层能力保持框架无关，为 React / Web Components 预留扩展空间。</p>
+
+<div class="mockup">
+  <div class="mockup-header">分层架构总览</div>
+  <div class="mockup-body">
+    <div style="display:flex; flex-direction:column; gap:12px; font-family: ui-sans-serif, system-ui;">
+      <div style="padding:14px 18px; border-radius:12px; background:#eef2ff; border:1px solid #c7d2fe;">
+        <strong>生态层 Ecosystem</strong><br>
+        Docs / Playground / CLI / Resolver / Figma Tokens / ESLint Rules
+      </div>
+      <div style="padding:14px 18px; border-radius:12px; background:#f0fdf4; border:1px solid #bbf7d0;">
+        <strong>业务层 Pro Components</strong><br>
+        ProForm / ProTable / QueryFilter / Layout / Auth-aware Widgets
+      </div>
+      <div style="padding:14px 18px; border-radius:12px; background:#ecfeff; border:1px solid #a5f3fc;">
+        <strong>组件层 Vue Components</strong><br>
+        Button / Input / Select / Dialog / Form / Table / DatePicker
+      </div>
+      <div style="padding:14px 18px; border-radius:12px; background:#fff7ed; border:1px solid #fed7aa;">
+        <strong>适配层 Vue Adapter</strong><br>
+        Plugin Install / Directives / Composables / Runtime Config / Locale Provider
+      </div>
+      <div style="padding:14px 18px; border-radius:12px; background:#fdf2f8; border:1px solid #fbcfe8;">
+        <strong>基础层 Framework-agnostic Core</strong><br>
+        Tokens / Theme Algorithm / I18n Protocol / Icon Model / Shared Utils / Types
+      </div>
+      <div style="padding:14px 18px; border-radius:12px; background:#f8fafc; border:1px solid #cbd5e1;">
+        <strong>样式层 Style System</strong><br>
+        SCSS Source / CSS Variables / Theme Packages / Runtime Theme Injection
+      </div>
+      <div style="padding:14px 18px; border-radius:12px; background:#fafafa; border:1px solid #d4d4d4;">
+        <strong>工具层 Tooling</strong><br>
+        Build / Test / Release / Type Check / Bundle Analyze / Codemod
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <h3>核心原则</h3>
+  <ul>
+    <li>业务只能依赖组件，组件只能依赖 Core、样式和工具，Core 不依赖任何框架。</li>
+    <li>主题、图标、国际化、类型协议沉淀到 Core，Vue 只做渲染和运行时适配。</li>
+    <li>每个组件独立入口、独立样式、独立类型，保证按需引入和 Tree-shaking。</li>
+  </ul>
+</div>
