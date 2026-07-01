@@ -13,3 +13,12 @@ export type { CheckboxGroupContext } from '../checkbox';
 
 export { InputNumber } from '../input-number';
 export type { InputNumberProps } from '../input-number';
+
+export { Radio, RadioGroup, RadioButton } from '../radio';
+export type { RadioGroupContext } from '../radio';
+
+export { Switch } from '../switch';
+export type { SwitchProps } from '../switch';
+
+export { Select } from '../select';
+export type { SelectOption } from '../select';
