@@ -1,0 +1,181 @@
+/* ========================================
+   Menu Component Styles
+   ======================================== */
+
+/* ========== Root Menu ========== */
+
+.crazy-menu {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--menu-bg-color, #ffffff);
+  color: var(--menu-text-color, inherit);
+  border-right: 1px solid var(--menu-border-color, var(--color-border, #e0e0e0));
+  width: var(--menu-expand-width, 220px);
+  position: relative;
+  overflow-y: auto;
+}
+
+/* Vertical mode */
+.crazy-menu--vertical {
+  flex-direction: column;
+}
+
+/* Horizontal mode */
+.crazy-menu--horizontal {
+  flex-direction: row;
+  border-right: none;
+  border-bottom: 1px solid var(--menu-border-color, var(--color-border, #e0e0e0));
+  width: 100%;
+  overflow-y: visible;
+}
+
+/* Collapse mode */
+.crazy-menu.is-collapse {
+  width: var(--menu-collapse-width, 64px);
+}
+
+/* ========== Menu Item ========== */
+
+.crazy-menu__item {
+  display: flex;
+  align-items: center;
+  height: var(--menu-item-height, 56px);
+  padding: 0 var(--menu-item-padding-horizontal, 20px);
+  cursor: pointer;
+  font-size: 14px;
+  color: inherit;
+  transition: background-color 0.2s, color 0.2s;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.crazy-menu__item:hover {
+  background-color: var(--menu-item-hover-bg-color, var(--color-bg-secondary, #f5f5f5));
+}
+
+/* Active state */
+.crazy-menu__item.is-active {
+  color: var(--menu-item-active-color, var(--color-primary, #409eff));
+}
+
+/* Disabled state */
+.crazy-menu__item.is-disabled {
+  cursor: not-allowed;
+  color: var(--menu-item-disabled-text-color, var(--color-text-disabled, #c0c4cc));
+  background-color: var(--menu-item-disabled-bg-color, transparent);
+}
+.crazy-menu__item.is-disabled:hover {
+  background-color: transparent;
+}
+
+/* Horizontal mode items */
+.crazy-menu--horizontal .crazy-menu__item {
+  border-bottom: 2px solid transparent;
+  padding: 0 20px;
+}
+.crazy-menu--horizontal .crazy-menu__item.is-active {
+  border-bottom-color: var(--menu-item-active-color, var(--color-primary, #409eff));
+}
+
+/* ========== Sub Menu ========== */
+
+.crazy-sub-menu {
+  position: relative;
+  list-style: none;
+}
+
+.crazy-sub-menu.is-disabled > .crazy-sub-menu__title {
+  cursor: not-allowed;
+  color: var(--menu-item-disabled-text-color, var(--color-text-disabled, #c0c4cc));
+}
+.crazy-sub-menu.is-disabled > .crazy-sub-menu__title:hover {
+  background-color: transparent;
+}
+
+/* Sub Menu Title */
+.crazy-sub-menu__title {
+  display: flex;
+  align-items: center;
+  height: var(--menu-item-height, 56px);
+  padding: 0 var(--menu-item-padding-horizontal, 20px);
+  cursor: pointer;
+  font-size: 14px;
+  color: inherit;
+  transition: background-color 0.2s, color 0.2s;
+  user-select: none;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+
+.crazy-sub-menu__title:hover {
+  background-color: var(--menu-item-hover-bg-color, var(--color-bg-secondary, #f5f5f5));
+}
+
+/* Sub Menu Arrow */
+.crazy-sub-menu__arrow {
+  display: inline-flex;
+  align-items: center;
+  font-size: 10px;
+  transition: transform 0.2s;
+  margin-left: auto;
+}
+.crazy-sub-menu__arrow.is-open {
+  transform: rotate(90deg);
+}
+
+/* Sub Menu Children */
+.crazy-sub-menu__children {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: var(--sub-menu-children-padding-left, 20px);
+  box-sizing: border-box;
+}
+
+/* Horizontal mode: sub-menu popup */
+.crazy-menu--horizontal .crazy-sub-menu {
+  position: static;
+}
+.crazy-menu--horizontal .crazy-sub-menu__children {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 100%;
+  background-color: var(--menu-bg-color, #ffffff);
+  border: 1px solid var(--menu-border-color, var(--color-border, #e0e0e0));
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding-left: 0;
+  z-index: 1000;
+}
+
+/* ========== Menu Item Group ========== */
+
+.crazy-menu-item-group {
+  list-style: none;
+}
+
+.crazy-menu-item-group__title {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  padding: 0 var(--menu-item-padding-horizontal, 20px);
+  font-size: var(--menu-item-group-title-font-size, 12px);
+  color: var(--menu-item-group-title-color, var(--color-text-tertiary, #909399));
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.crazy-menu-item-group__group {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
