@@ -5,3 +5,5 @@ export { useZIndex } from './use-z-index';
 export { useLocale } from './use-locale';
 export type { LocaleMessages } from './use-locale';
 export { useSize } from './use-size';
+export { useRouterLink, routerLinkInjectionKey } from './use-router-link';
+export type { RouterLike, UseRouterLinkOptions } from './use-router-link';
