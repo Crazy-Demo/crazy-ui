@@ -22,3 +22,5 @@ export type { SwitchProps } from '../switch';
 
 export { Select } from '../select';
 export type { SelectOption } from '../select';
+
+export { Menu, MenuItem, SubMenu, MenuItemGroup } from '../menu';

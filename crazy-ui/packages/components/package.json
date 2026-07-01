@@ -29,13 +29,23 @@
       "types": "./dist/input-number/index.d.ts",
       "import": "./dist/input-number/index.js"
     },
-    "./input-number/style": "./dist/input-number/style/index.css"
+    "./input-number/style": "./dist/input-number/style/index.css",
+    "./select": {
+      "types": "./dist/select/index.d.ts",
+      "import": "./dist/select/index.js"
+    },
+    "./select/style": "./dist/select/style/index.css",
+    "./menu": {
+      "types": "./dist/menu/index.d.ts",
+      "import": "./dist/menu/index.js"
+    },
+    "./menu/style": "./dist/menu/style/index.css"
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc --project tsconfig.json && cp -r button/style dist/button/ && cp -r input/style dist/input/ && cp -r input-number/style dist/input-number/",
+    "build": "tsc --project tsconfig.json && cp -r button/style dist/button/ && cp -r input/style dist/input/ && cp -r input-number/style dist/input-number/ && cp -r select/style dist/select/ && cp -r menu/style dist/menu/",
     "typecheck": "tsc --noEmit",
     "test": "vitest"
   },
