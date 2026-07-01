@@ -1,0 +1,147 @@
+/**
+ * CSS Variables - 将 token 转换为 CSS 变量
+ *
+ * 这些 CSS 变量可以在组件样式中使用
+ */
+
+:root {
+  /* ============ Primitive Colors ============ */
+  --color-blue-50: #e6f4ff;
+  --color-blue-500: #1677ff;
+  --color-blue-600: #0958d9;
+
+  --color-green-50: #f6ffed;
+  --color-green-500: #52c41a;
+  --color-green-600: #389e0d;
+
+  --color-red-50: #fff1f0;
+  --color-red-500: #f5222d;
+  --color-red-600: #cf1322;
+
+  --color-orange-50: #fff7e6;
+  --color-orange-500: #fa8c16;
+  --color-orange-600: #d46b08;
+
+  --color-gray-50: #fafafa;
+  --color-gray-100: #f5f5f5;
+  --color-gray-200: #e8e8e8;
+  --color-gray-300: #d9d9d9;
+  --color-gray-400: #bfbfbf;
+  --color-gray-500: #8c8c8c;
+  --color-gray-600: #595959;
+  --color-gray-900: #1f1f1f;
+
+  /* ============ Semantic Colors ============ */
+  --color-primary: var(--color-blue-500);
+  --color-primary-hover: #4096ff;
+  --color-primary-active: var(--color-blue-600);
+  --color-primary-bg: var(--color-blue-50);
+
+  --color-success: var(--color-green-500);
+  --color-success-hover: #73d13d;
+  --color-success-active: var(--color-green-600);
+  --color-success-bg: var(--color-green-50);
+
+  --color-warning: var(--color-orange-500);
+  --color-warning-hover: #ffa940;
+  --color-warning-active: var(--color-orange-600);
+  --color-warning-bg: var(--color-orange-50);
+
+  --color-danger: var(--color-red-500);
+  --color-danger-hover: #ff4d4f;
+  --color-danger-active: var(--color-red-600);
+  --color-danger-bg: var(--color-red-50);
+
+  --color-text: var(--color-gray-900);
+  --color-text-secondary: var(--color-gray-600);
+  --color-text-disabled: var(--color-gray-400);
+
+  --color-bg: #ffffff;
+  --color-bg-secondary: var(--color-gray-50);
+  --color-bg-disabled: var(--color-gray-200);
+
+  --color-border: var(--color-gray-300);
+  --color-border-secondary: var(--color-gray-200);
+
+  /* ============ Semantic Sizes ============ */
+  --height-small: 24px;
+  --height-medium: 32px;
+  --height-large: 40px;
+
+  --radius-small: 2px;
+  --radius-medium: 4px;
+  --radius-large: 8px;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* ============ Button Component Tokens ============ */
+  --button-height-small: var(--height-small);
+  --button-height-medium: var(--height-medium);
+  --button-height-large: var(--height-large);
+
+  --button-padding-small: 0 var(--spacing-sm);
+  --button-padding-medium: 0 var(--spacing-md);
+  --button-padding-large: 0 var(--spacing-lg);
+
+  --button-border-radius: var(--radius-medium);
+
+  --button-font-size-small: 12px;
+  --button-font-size-medium: 14px;
+  --button-font-size-large: 16px;
+
+  /* Primary Button */
+  --button-primary-bg: var(--color-primary);
+  --button-primary-bg-hover: var(--color-primary-hover);
+  --button-primary-bg-active: var(--color-primary-active);
+  --button-primary-text: #ffffff;
+  --button-primary-border: var(--color-primary);
+
+  /* Success Button */
+  --button-success-bg: var(--color-success);
+  --button-success-bg-hover: var(--color-success-hover);
+  --button-success-bg-active: var(--color-success-active);
+  --button-success-text: #ffffff;
+  --button-success-border: var(--color-success);
+
+  /* Warning Button */
+  --button-warning-bg: var(--color-warning);
+  --button-warning-bg-hover: var(--color-warning-hover);
+  --button-warning-bg-active: var(--color-warning-active);
+  --button-warning-text: #ffffff;
+  --button-warning-border: var(--color-warning);
+
+  /* Danger Button */
+  --button-danger-bg: var(--color-danger);
+  --button-danger-bg-hover: var(--color-danger-hover);
+  --button-danger-bg-active: var(--color-danger-active);
+  --button-danger-text: #ffffff;
+  --button-danger-border: var(--color-danger);
+
+  /* Disabled Button */
+  --button-disabled-bg: var(--color-bg-disabled);
+  --button-disabled-text: var(--color-text-disabled);
+  --button-disabled-border: var(--color-border);
+
+  /* ============ Input Component Tokens ============ */
+  --input-height-small: var(--height-small);
+  --input-height-medium: var(--height-medium);
+  --input-height-large: var(--height-large);
+  --input-border-color: var(--color-border);
+  --input-focus-border-color: var(--color-primary);
+  --input-border-radius: var(--radius-medium);
+  --input-bg-color: var(--color-bg);
+  --input-disabled-bg-color: var(--color-bg-disabled);
+  --input-text-color: var(--color-text);
+  --input-placeholder-color: var(--color-text-disabled);
+  --input-disabled-text-color: var(--color-text-disabled);
+  --input-font-size-small: 12px;
+  --input-font-size-medium: 14px;
+  --input-font-size-large: 16px;
+  --input-padding-small: 0 var(--spacing-sm);
+  --input-padding-medium: 0 var(--spacing-md);
+  --input-padding-large: 0 var(--spacing-lg);
+}
