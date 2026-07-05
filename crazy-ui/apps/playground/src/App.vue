@@ -2,7 +2,7 @@
   <div class="playground">
     <header class="header">
       <h1>Crazy UI</h1>
-      <p class="subtitle">Enterprise Vue 3 Component Library — 10 个组件 · 246 tests</p>
+      <p class="subtitle">Enterprise Vue 3 Component Library — 11 个组件 · 267 tests</p>
     </header>
 
     <nav class="toc">
@@ -209,9 +209,52 @@
       </div>
     </section>
 
+    <!-- ======================== Form ======================== -->
+    <section id="form" class="section">
+      <h2 class="section-title">Form 表单</h2>
+      <div style="max-width:480px;">
+        <Form ref="formRef" :model="formModel" :rules="formRules" @submit="onFormSubmit" label-width="80px">
+          <FormItem label="用户名" prop="username">
+            <Input v-model="formModel.username" placeholder="请输入用户名" />
+          </FormItem>
+          <FormItem label="密码" prop="password">
+            <Input v-model="formModel.password" type="password" show-password placeholder="请输入密码" />
+          </FormItem>
+          <FormItem label="年龄" prop="age">
+            <InputNumber v-model="formModel.age" :min="1" :max="120" style="width:100%" />
+          </FormItem>
+          <FormItem label="城市" prop="city">
+            <Select v-model="formModel.city" :options="cityOptions" placeholder="请选择" style="width:100%" />
+          </FormItem>
+          <FormItem label="爱好" prop="hobbies">
+            <CheckboxGroup v-model="formModel.hobbies">
+              <Checkbox label="reading">阅读</Checkbox>
+              <Checkbox label="sports">运动</Checkbox>
+              <Checkbox label="music">音乐</Checkbox>
+            </CheckboxGroup>
+          </FormItem>
+          <FormItem label="性别" prop="gender">
+            <RadioGroup v-model="formModel.gender">
+              <Radio label="male">男</Radio>
+              <Radio label="female">女</Radio>
+            </RadioGroup>
+          </FormItem>
+          <FormItem>
+            <Button native-type="submit" variant="solid" color="primary">Submit</Button>
+            <Button variant="outline" @click="formRef?.resetFields()" style="margin-left:8px;">Reset</Button>
+          </FormItem>
+        </Form>
+        <div v-if="submitResult" :class="submitResult.valid ? 'log' : 'log'"
+          style="margin-top:12px; padding:8px 16px; border-radius:4px;"
+          :style="{ borderColor: submitResult.valid ? 'var(--color-success)' : 'var(--color-danger)' }">
+          {{ submitResult.valid ? '✅ 提交成功' : '❌ 请检查表单' }}
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <p>Crazy UI — Vue 3 Enterprise Component Library</p>
-      <p>10 components · 246 tests · all passing ✅</p>
+      <p>11 components · 267 tests · all passing ✅</p>
     </footer>
   </div>
 </template>
@@ -225,6 +268,7 @@ import {
   Switch,
   Menu, MenuItem, SubMenu,
   Tabs, TabPane,
+  Form, FormItem,
 } from '@crazy-ui/components';
 
 // Styles
@@ -238,6 +282,7 @@ import '../../../packages/components/radio/style/index.css';
 import '../../../packages/components/switch/style/index.css';
 import '../../../packages/components/menu/style/index.css';
 import '../../../packages/components/tabs/style/index.css';
+import '../../../packages/components/form/style/index.css';
 
 const sections = [
   { id: 'button', label: 'Button' },
@@ -249,6 +294,7 @@ const sections = [
   { id: 'switch', label: 'Switch' },
   { id: 'menu', label: 'Menu' },
   { id: 'tabs', label: 'Tabs' },
+  { id: 'form', label: 'Form' },
 ];
 
 // Button
@@ -302,6 +348,39 @@ const menu2Active = ref('home');
 // Tabs
 const tabActive = ref('tab1');
 const tab2Active = ref('a');
+
+// Form
+const formRef = ref<any>(null);
+const formModel = ref({
+  username: '',
+  password: '',
+  age: undefined as number | undefined,
+  city: '',
+  hobbies: ['reading'],
+  gender: 'male',
+});
+const cityOptions = [
+  { value: 'beijing', label: '北京' },
+  { value: 'shanghai', label: '上海' },
+  { value: 'shenzhen', label: '深圳' },
+];
+const formRules = {
+  username: [{ required: true, message: '请输入用户名', trigger: 'blur' }],
+  password: [
+    { required: true, message: '请输入密码', trigger: 'blur' },
+    { min: 6, message: '密码至少6位', trigger: 'blur' },
+  ],
+  age: [
+    { required: true, message: '请输入年龄', trigger: 'blur' },
+    { validator: (v: number) => v >= 18 || v === undefined, message: '必须年满18岁', trigger: 'change' },
+  ],
+  city: [{ required: true, message: '请选择城市', trigger: 'change' }],
+};
+const submitResult = ref<{ valid: boolean } | null>(null);
+function onFormSubmit(model: Record<string, any>) {
+  submitResult.value = { valid: true };
+  console.log('Form submitted:', model);
+}
 </script>
 
 <style>
