@@ -27,3 +27,6 @@ export { Menu, MenuItem, SubMenu, MenuItemGroup } from '../menu';
 
 export { Tabs, TabPane } from '../tabs';
 export type { TabsType, TabPosition, TabPaneState } from '../tabs';
+
+export { Form, FormItem } from '../form';
+export type { FormRule, FormRules, FormValidateResult } from '../form';
