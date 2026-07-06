@@ -30,3 +30,9 @@ export type { TabsType, TabPosition, TabPaneState } from '../tabs';
 
 export { Form, FormItem } from '../form';
 export type { FormRule, FormRules, FormValidateResult } from '../form';
+
+export { Dialog } from '../dialog';
+export type { DialogProps } from '../dialog';
+
+export { Tooltip } from '../tooltip';
+export type { TooltipProps } from '../tooltip';

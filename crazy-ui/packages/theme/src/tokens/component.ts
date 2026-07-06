@@ -126,3 +126,27 @@ export const inputNumberTokens: TokenMap = {
   inputNumberFontSizeMedium: '14px',
   inputNumberFontSizeLarge: '16px',
 } as const;
+
+// ============ Dialog Component Tokens ============
+export const dialogTokens: TokenMap = {
+  dialogOverlayBg: 'rgba(0, 0, 0, 0.5)',
+  dialogBg: semanticColors.colorBg,
+  dialogBorderColor: semanticColors.colorBorder,
+  dialogBorderRadius: '8px',
+  dialogBoxShadow: '0 4px 24px rgba(0, 0, 0, 0.15)',
+  dialogTitleFontSize: '16px',
+  dialogTitleFontWeight: '600',
+  dialogPaddingHeader: '16px 24px',
+  dialogPaddingBody: '24px',
+  dialogPaddingFooter: '12px 24px',
+} as const;
+
+// ============ Tooltip Component Tokens ============
+export const tooltipTokens: TokenMap = {
+  tooltipBg: '#333333',
+  tooltipText: '#ffffff',
+  tooltipFontSize: '12px',
+  tooltipBorderRadius: '4px',
+  tooltipPadding: '6px 12px',
+  tooltipArrowSize: '5px',
+} as const;

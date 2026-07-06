@@ -59,13 +59,23 @@
       "types": "./dist/form/index.d.ts",
       "import": "./dist/form/index.js"
     },
-    "./form/style": "./dist/form/style/index.css"
+    "./form/style": "./dist/form/style/index.css",
+    "./dialog": {
+      "types": "./dist/dialog/index.d.ts",
+      "import": "./dist/dialog/index.js"
+    },
+    "./dialog/style": "./dist/dialog/style/index.css",
+    "./tooltip": {
+      "types": "./dist/tooltip/index.d.ts",
+      "import": "./dist/tooltip/index.js"
+    },
+    "./tooltip/style": "./dist/tooltip/style/index.css"
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc --project tsconfig.json && cp -r button/style dist/button/ && cp -r input/style dist/input/ && cp -r input-number/style dist/input-number/ && cp -r select/style dist/select/ && cp -r menu/style dist/menu/ && cp -r tabs/style dist/tabs/ && cp -r form/style dist/form/",
+    "build": "tsc --project tsconfig.json && cp -r button/style dist/button/ && cp -r input/style dist/input/ && cp -r input-number/style dist/input-number/ && cp -r select/style dist/select/ && cp -r menu/style dist/menu/ && cp -r tabs/style dist/tabs/ && cp -r form/style dist/form/ && cp -r dialog/style dist/dialog/ && cp -r tooltip/style dist/tooltip/",
     "typecheck": "tsc --noEmit",
     "test": "vitest"
   },
