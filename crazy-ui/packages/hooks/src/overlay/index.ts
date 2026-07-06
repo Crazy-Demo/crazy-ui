@@ -6,3 +6,7 @@ export { usePosition } from './use-position';
 export type { UsePositionOptions } from './use-position';
 export { useOverlayManager } from './use-overlay-manager';
 export type { OverlayInstance, OverlayManagerContext } from './use-overlay-manager';
+export { useFocusTrap } from './use-focus-trap';
+export type { UseFocusTrapOptions } from './use-focus-trap';
+export { useScrollLock } from './use-scroll-lock';
+export type { UseScrollLockOptions } from './use-scroll-lock';
