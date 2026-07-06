@@ -36,3 +36,12 @@ export type { DialogProps } from '../dialog';
 
 export { Tooltip } from '../tooltip';
 export type { TooltipProps } from '../tooltip';
+
+export { Popover } from '../popover';
+export type { PopoverProps } from '../popover';
+
+export { Tag } from '../tag';
+export type { TagProps } from '../tag';
+
+export { Badge } from '../badge';
+export type { BadgeProps } from '../badge';
