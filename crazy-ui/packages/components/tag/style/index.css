@@ -1,0 +1,132 @@
+.crazy-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0 8px;
+  height: 24px;
+  font-size: 12px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+
+/* Sizes */
+.crazy-tag--small {
+  height: 20px;
+  padding: 0 6px;
+  font-size: 11px;
+}
+
+.crazy-tag--medium {
+  height: 24px;
+  padding: 0 8px;
+  font-size: 12px;
+}
+
+.crazy-tag--large {
+  height: 28px;
+  padding: 0 12px;
+  font-size: 14px;
+}
+
+/* Types — light effect (default) */
+.crazy-tag--primary.crazy-tag--light {
+  background: var(--color-primary-bg);
+  color: var(--color-primary);
+  border-color: transparent;
+}
+
+.crazy-tag--success.crazy-tag--light {
+  background: var(--color-success-bg);
+  color: var(--color-success);
+  border-color: transparent;
+}
+
+.crazy-tag--warning.crazy-tag--light {
+  background: var(--color-warning-bg);
+  color: var(--color-warning);
+  border-color: transparent;
+}
+
+.crazy-tag--danger.crazy-tag--light {
+  background: var(--color-danger-bg);
+  color: var(--color-danger);
+  border-color: transparent;
+}
+
+.crazy-tag--info.crazy-tag--light {
+  background: var(--color-bg-secondary);
+  color: var(--color-text-secondary);
+}
+
+/* Types — dark effect */
+.crazy-tag--dark {
+  color: #fff;
+}
+
+.crazy-tag--primary.crazy-tag--dark {
+  background: var(--color-primary);
+}
+
+.crazy-tag--success.crazy-tag--dark {
+  background: var(--color-success);
+}
+
+.crazy-tag--warning.crazy-tag--dark {
+  background: var(--color-warning);
+}
+
+.crazy-tag--danger.crazy-tag--dark {
+  background: var(--color-danger);
+}
+
+.crazy-tag--info.crazy-tag--dark {
+  background: var(--color-text-secondary);
+}
+
+/* Types — plain effect */
+.crazy-tag--plain {
+  background: transparent;
+}
+
+.crazy-tag--primary.crazy-tag--plain {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.crazy-tag--success.crazy-tag--plain {
+  border-color: var(--color-success);
+  color: var(--color-success);
+}
+
+.crazy-tag--warning.crazy-tag--plain {
+  border-color: var(--color-warning);
+  color: var(--color-warning);
+}
+
+.crazy-tag--danger.crazy-tag--plain {
+  border-color: var(--color-danger);
+  color: var(--color-danger);
+}
+
+.crazy-tag--info.crazy-tag--plain {
+  border-color: var(--color-border);
+  color: var(--color-text-secondary);
+}
+
+/* Round */
+.crazy-tag.is-round {
+  border-radius: 100px;
+}
+
+/* Close button */
+.crazy-tag__close {
+  margin-left: 4px;
+  cursor: pointer;
+  font-size: 10px;
+  opacity: 0.6;
+}
+
+.crazy-tag__close:hover {
+  opacity: 1;
+}
