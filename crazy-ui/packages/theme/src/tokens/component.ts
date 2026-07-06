@@ -150,3 +150,41 @@ export const tooltipTokens: TokenMap = {
   tooltipPadding: '6px 12px',
   tooltipArrowSize: '5px',
 } as const;
+
+// ============ Popover Component Tokens ============
+export const popoverTokens: TokenMap = {
+  popoverBg: semanticColors.colorBg,
+  popoverBorderRadius: '8px',
+  popoverBoxShadow: '0 4px 16px rgba(0, 0, 0, 0.12)',
+  popoverPadding: '12px',
+  popoverBorderColor: semanticColors.colorBorder,
+  popoverArrowSize: '8px',
+  popoverMinWidth: '150px',
+} as const;
+
+// ============ Tag Component Tokens ============
+export const tagTokens: TokenMap = {
+  tagHeightSmall: '20px',
+  tagHeightMedium: '24px',
+  tagHeightLarge: '28px',
+  tagPaddingSmall: '0 6px',
+  tagPaddingMedium: '0 8px',
+  tagPaddingLarge: '0 12px',
+  tagFontSizeSmall: '11px',
+  tagFontSizeMedium: '12px',
+  tagFontSizeLarge: '14px',
+  tagBorderRadius: '4px',
+  tagCloseFontSize: '10px',
+  tagCloseMargin: '4px',
+} as const;
+
+// ============ Badge Component Tokens ============
+export const badgeTokens: TokenMap = {
+  badgeFontSize: '12px',
+  badgeMinWidth: '18px',
+  badgeHeight: '18px',
+  badgePadding: '0 6px',
+  badgeBorderRadius: '9px',
+  badgeDotSize: '8px',
+  badgeTextColor: '#ffffff',
+} as const;
