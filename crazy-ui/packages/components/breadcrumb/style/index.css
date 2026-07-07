@@ -1,0 +1,24 @@
+.crazy-breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.crazy-breadcrumb-item {
+  color: var(--color-text-secondary);
+}
+
+.crazy-breadcrumb-item.is-link {
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.crazy-breadcrumb-item.is-link:hover {
+  color: var(--color-primary);
+}
+
+.crazy-breadcrumb-item__separator {
+  margin: 0 8px;
+  color: var(--color-text-disabled);
+}
