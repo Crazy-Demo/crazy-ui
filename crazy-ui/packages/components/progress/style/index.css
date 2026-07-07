@@ -1,0 +1,26 @@
+.crazy-progress {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.crazy-progress__bar {
+  flex: 1;
+  background: var(--color-bg-secondary);
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.crazy-progress__inner {
+  border-radius: 100px;
+  transition: width 0.3s ease;
+  background: var(--color-primary);
+}
+
+.crazy-progress__text {
+  margin-left: 12px;
+  font-size: 14px;
+  color: var(--color-text);
+  min-width: 40px;
+  text-align: right;
+}
