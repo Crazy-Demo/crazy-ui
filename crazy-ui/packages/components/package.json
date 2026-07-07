@@ -104,13 +104,28 @@
       "types": "./dist/breadcrumb/index.d.ts",
       "import": "./dist/breadcrumb/index.js"
     },
-    "./breadcrumb/style": "./dist/breadcrumb/style/index.css"
+    "./breadcrumb/style": "./dist/breadcrumb/style/index.css",
+    "./card": {
+      "types": "./dist/card/index.d.ts",
+      "import": "./dist/card/index.js"
+    },
+    "./card/style": "./dist/card/style/index.css",
+    "./collapse": {
+      "types": "./dist/collapse/index.d.ts",
+      "import": "./dist/collapse/index.js"
+    },
+    "./collapse/style": "./dist/collapse/style/index.css",
+    "./drawer": {
+      "types": "./dist/drawer/index.d.ts",
+      "import": "./dist/drawer/index.js"
+    },
+    "./drawer/style": "./dist/drawer/style/index.css"
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc --project tsconfig.json && cp -r button/style dist/button/ && cp -r input/style dist/input/ && cp -r input-number/style dist/input-number/ && cp -r select/style dist/select/ && cp -r menu/style dist/menu/ && cp -r tabs/style dist/tabs/ && cp -r form/style dist/form/ && cp -r dialog/style dist/dialog/ && cp -r tooltip/style dist/tooltip/ && cp -r popover/style dist/popover/ && cp -r tag/style dist/tag/ && cp -r badge/style dist/badge/ && cp -r space/style dist/space/ && cp -r divider/style dist/divider/ && cp -r pagination/style dist/pagination/ && cp -r breadcrumb/style dist/breadcrumb/",
+    "build": "tsc --project tsconfig.json && cp -r button/style dist/button/ && cp -r input/style dist/input/ && cp -r input-number/style dist/input-number/ && cp -r select/style dist/select/ && cp -r menu/style dist/menu/ && cp -r tabs/style dist/tabs/ && cp -r form/style dist/form/ && cp -r dialog/style dist/dialog/ && cp -r tooltip/style dist/tooltip/ && cp -r popover/style dist/popover/ && cp -r tag/style dist/tag/ && cp -r badge/style dist/badge/ && cp -r space/style dist/space/ && cp -r divider/style dist/divider/ && cp -r pagination/style dist/pagination/ && cp -r breadcrumb/style dist/breadcrumb/ && cp -r card/style dist/card/ && cp -r collapse/style dist/collapse/ && cp -r drawer/style dist/drawer/",
     "typecheck": "tsc --noEmit",
     "test": "vitest"
   },

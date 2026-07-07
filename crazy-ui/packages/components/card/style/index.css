@@ -1,0 +1,30 @@
+.crazy-card {
+  border: 1px solid var(--color-border, #e0e0e0);
+  border-radius: 8px;
+  background: var(--color-bg, #fff);
+  overflow: hidden;
+}
+
+.crazy-card.is-shadow {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.crazy-card.is-hover-shadow:hover {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.crazy-card__header {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--color-border, #e0e0e0);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.crazy-card__body {
+  padding: 20px;
+}
+
+.crazy-card__footer {
+  padding: 12px 20px;
+  border-top: 1px solid var(--color-border, #e0e0e0);
+}

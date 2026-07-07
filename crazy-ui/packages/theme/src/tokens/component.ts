@@ -188,3 +188,38 @@ export const badgeTokens: TokenMap = {
   badgeDotSize: '8px',
   badgeTextColor: '#ffffff',
 } as const;
+
+// ============ Card Component Tokens ============
+export const cardTokens: TokenMap = {
+  cardBorderColor: semanticColors.colorBorder,
+  cardBorderRadius: '8px',
+  cardBg: semanticColors.colorBg,
+  cardShadow: '0 2px 12px rgba(0, 0, 0, 0.08)',
+  cardHeaderPadding: '16px 20px',
+  cardHeaderFontSize: '16px',
+  cardHeaderFontWeight: '600',
+  cardBodyPadding: '20px',
+  cardFooterPadding: '12px 20px',
+} as const;
+
+// ============ Collapse Component Tokens ============
+export const collapseTokens: TokenMap = {
+  collapseBorderColor: semanticColors.colorBorder,
+  collapseBorderRadius: '4px',
+  collapseHeaderBgHover: semanticColors.colorBgSecondary,
+  collapseHeaderPadding: '12px 16px',
+  collapseContentPadding: '0 16px 16px',
+  collapseDisabledOpacity: '0.5',
+} as const;
+
+// ============ Drawer Component Tokens ============
+export const drawerTokens: TokenMap = {
+  drawerOverlayBg: 'rgba(0, 0, 0, 0.5)',
+  drawerBg: semanticColors.colorBg,
+  drawerBorderColor: semanticColors.colorBorder,
+  drawerHeaderPadding: '16px 24px',
+  drawerTitleFontSize: '16px',
+  drawerTitleFontWeight: '600',
+  drawerBodyPadding: '24px',
+  drawerFooterPadding: '12px 24px',
+} as const;

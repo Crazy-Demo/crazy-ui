@@ -57,3 +57,12 @@ export type { PaginationProps } from '../pagination';
 
 export { Breadcrumb, BreadcrumbItem } from '../breadcrumb';
 export type { BreadcrumbProps, BreadcrumbItemProps } from '../breadcrumb';
+
+export { Card } from '../card';
+export type { CardProps } from '../card';
+
+export { Collapse, CollapseItem } from '../collapse';
+export type { CollapseProps, CollapseItemProps } from '../collapse';
+
+export { Drawer } from '../drawer';
+export type { DrawerProps } from '../drawer';
