@@ -66,3 +66,12 @@ export type { CollapseProps, CollapseItemProps } from '../collapse';
 
 export { Drawer } from '../drawer';
 export type { DrawerProps } from '../drawer';
+
+export { Progress } from '../progress';
+export type { ProgressProps } from '../progress';
+
+export { Dropdown } from '../dropdown';
+export type { DropdownProps } from '../dropdown';
+
+export { Steps, Step } from '../steps';
+export type { StepsProps, StepProps, StepStatus } from '../steps';

@@ -119,13 +119,28 @@
       "types": "./dist/drawer/index.d.ts",
       "import": "./dist/drawer/index.js"
     },
-    "./drawer/style": "./dist/drawer/style/index.css"
+    "./drawer/style": "./dist/drawer/style/index.css",
+    "./progress": {
+      "types": "./dist/progress/index.d.ts",
+      "import": "./dist/progress/index.js"
+    },
+    "./progress/style": "./dist/progress/style/index.css",
+    "./dropdown": {
+      "types": "./dist/dropdown/index.d.ts",
+      "import": "./dist/dropdown/index.js"
+    },
+    "./dropdown/style": "./dist/dropdown/style/index.css",
+    "./steps": {
+      "types": "./dist/steps/index.d.ts",
+      "import": "./dist/steps/index.js"
+    },
+    "./steps/style": "./dist/steps/style/index.css"
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc --project tsconfig.json && cp -r button/style dist/button/ && cp -r input/style dist/input/ && cp -r input-number/style dist/input-number/ && cp -r select/style dist/select/ && cp -r menu/style dist/menu/ && cp -r tabs/style dist/tabs/ && cp -r form/style dist/form/ && cp -r dialog/style dist/dialog/ && cp -r tooltip/style dist/tooltip/ && cp -r popover/style dist/popover/ && cp -r tag/style dist/tag/ && cp -r badge/style dist/badge/ && cp -r space/style dist/space/ && cp -r divider/style dist/divider/ && cp -r pagination/style dist/pagination/ && cp -r breadcrumb/style dist/breadcrumb/ && cp -r card/style dist/card/ && cp -r collapse/style dist/collapse/ && cp -r drawer/style dist/drawer/",
+    "build": "tsc --project tsconfig.json && cp -r button/style dist/button/ && cp -r input/style dist/input/ && cp -r input-number/style dist/input-number/ && cp -r select/style dist/select/ && cp -r menu/style dist/menu/ && cp -r tabs/style dist/tabs/ && cp -r form/style dist/form/ && cp -r dialog/style dist/dialog/ && cp -r tooltip/style dist/tooltip/ && cp -r popover/style dist/popover/ && cp -r tag/style dist/tag/ && cp -r badge/style dist/badge/ && cp -r space/style dist/space/ && cp -r divider/style dist/divider/ && cp -r pagination/style dist/pagination/ && cp -r breadcrumb/style dist/breadcrumb/ && cp -r card/style dist/card/ && cp -r collapse/style dist/collapse/ && cp -r drawer/style dist/drawer/ && cp -r progress/style dist/progress/ && cp -r dropdown/style dist/dropdown/ && cp -r steps/style dist/steps/",
     "typecheck": "tsc --noEmit",
     "test": "vitest"
   },
