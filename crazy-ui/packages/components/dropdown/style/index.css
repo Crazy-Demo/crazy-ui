@@ -1,0 +1,36 @@
+.crazy-dropdown {
+  display: inline-flex;
+  position: relative;
+}
+
+.crazy-dropdown__menu {
+  position: absolute;
+  background: var(--color-bg);
+  border-radius: 4px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+  border: 1px solid var(--color-border);
+  padding: 4px 0;
+  min-width: 120px;
+}
+
+.crazy-dropdown__menu > * {
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  display: block;
+  color: var(--color-text);
+}
+
+.crazy-dropdown__menu > *:hover {
+  background: var(--color-bg-secondary);
+}
+
+.dropdown-fade-enter-active,
+.dropdown-fade-leave-active {
+  transition: opacity 0.2s;
+}
+
+.dropdown-fade-enter-from,
+.dropdown-fade-leave-to {
+  opacity: 0;
+}
