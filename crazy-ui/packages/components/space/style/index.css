@@ -1,0 +1,29 @@
+.crazy-space {
+  display: flex;
+}
+
+.crazy-space--horizontal {
+  flex-direction: row;
+  align-items: center;
+}
+
+.crazy-space--vertical {
+  flex-direction: column;
+}
+
+.crazy-space--start {
+  align-items: flex-start;
+}
+
+.crazy-space--center {
+  align-items: center;
+  justify-content: center;
+}
+
+.crazy-space--end {
+  align-items: flex-end;
+}
+
+.crazy-space.is-wrap {
+  flex-wrap: wrap;
+}

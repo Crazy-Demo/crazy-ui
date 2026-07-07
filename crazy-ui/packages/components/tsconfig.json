@@ -7,7 +7,7 @@
     "jsx": "preserve",
     "lib": ["ES2023", "DOM", "DOM.Iterable"]
   },
-  "include": ["src/**/*", "button/**/*", "input/**/*", "checkbox/**/*", "input-number/**/*", "form/**/*", "dialog/**/*", "tooltip/**/*", "vue-shim.d.ts"],
+  "include": ["src/**/*", "button/**/*", "input/**/*", "checkbox/**/*", "input-number/**/*", "form/**/*", "dialog/**/*", "tooltip/**/*", "popover/**/*", "tag/**/*", "badge/**/*", "space/**/*", "divider/**/*", "pagination/**/*", "breadcrumb/**/*", "vue-shim.d.ts"],
   "exclude": ["node_modules", "dist", "**/tests/**"],
   "references": [
     { "path": "../core" },

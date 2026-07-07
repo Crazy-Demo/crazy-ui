@@ -84,13 +84,33 @@
       "types": "./dist/badge/index.d.ts",
       "import": "./dist/badge/index.js"
     },
-    "./badge/style": "./dist/badge/style/index.css"
+    "./badge/style": "./dist/badge/style/index.css",
+    "./space": {
+      "types": "./dist/space/index.d.ts",
+      "import": "./dist/space/index.js"
+    },
+    "./space/style": "./dist/space/style/index.css",
+    "./divider": {
+      "types": "./dist/divider/index.d.ts",
+      "import": "./dist/divider/index.js"
+    },
+    "./divider/style": "./dist/divider/style/index.css",
+    "./pagination": {
+      "types": "./dist/pagination/index.d.ts",
+      "import": "./dist/pagination/index.js"
+    },
+    "./pagination/style": "./dist/pagination/style/index.css",
+    "./breadcrumb": {
+      "types": "./dist/breadcrumb/index.d.ts",
+      "import": "./dist/breadcrumb/index.js"
+    },
+    "./breadcrumb/style": "./dist/breadcrumb/style/index.css"
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc --project tsconfig.json && cp -r button/style dist/button/ && cp -r input/style dist/input/ && cp -r input-number/style dist/input-number/ && cp -r select/style dist/select/ && cp -r menu/style dist/menu/ && cp -r tabs/style dist/tabs/ && cp -r form/style dist/form/ && cp -r dialog/style dist/dialog/ && cp -r tooltip/style dist/tooltip/ && cp -r popover/style dist/popover/ && cp -r tag/style dist/tag/ && cp -r badge/style dist/badge/",
+    "build": "tsc --project tsconfig.json && cp -r button/style dist/button/ && cp -r input/style dist/input/ && cp -r input-number/style dist/input-number/ && cp -r select/style dist/select/ && cp -r menu/style dist/menu/ && cp -r tabs/style dist/tabs/ && cp -r form/style dist/form/ && cp -r dialog/style dist/dialog/ && cp -r tooltip/style dist/tooltip/ && cp -r popover/style dist/popover/ && cp -r tag/style dist/tag/ && cp -r badge/style dist/badge/ && cp -r space/style dist/space/ && cp -r divider/style dist/divider/ && cp -r pagination/style dist/pagination/ && cp -r breadcrumb/style dist/breadcrumb/",
     "typecheck": "tsc --noEmit",
     "test": "vitest"
   },

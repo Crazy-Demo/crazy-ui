@@ -45,3 +45,15 @@ export type { TagProps } from '../tag';
 
 export { Badge } from '../badge';
 export type { BadgeProps } from '../badge';
+
+export { Space } from '../space';
+export type { SpaceProps } from '../space';
+
+export { Divider } from '../divider';
+export type { DividerProps } from '../divider';
+
+export { Pagination } from '../pagination';
+export type { PaginationProps } from '../pagination';
+
+export { Breadcrumb, BreadcrumbItem } from '../breadcrumb';
+export type { BreadcrumbProps, BreadcrumbItemProps } from '../breadcrumb';
