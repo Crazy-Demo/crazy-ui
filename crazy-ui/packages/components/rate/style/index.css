@@ -1,0 +1,82 @@
+.crazy-rate {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  outline: none;
+}
+
+/* Sizes */
+.crazy-rate--small {
+  font-size: 16px;
+}
+
+.crazy-rate--medium {
+  font-size: 20px;
+}
+
+.crazy-rate--large {
+  font-size: 24px;
+}
+
+/* Item */
+.crazy-rate__item {
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s, transform 0.15s;
+  user-select: none;
+  outline: none;
+  color: var(--color-border);
+}
+
+.crazy-rate__item:focus-visible {
+  border-radius: 2px;
+  box-shadow: 0 0 0 2px var(--color-primary-bg);
+}
+
+.crazy-rate__item.is-active {
+  color: #f7ba2a;
+}
+
+.crazy-rate__item.is-disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.crazy-rate__item.is-hover {
+  transform: scale(1.1);
+}
+
+.crazy-rate.is-readonly .crazy-rate__item {
+  cursor: default;
+}
+
+/* Half star */
+.crazy-rate__item.is-half .crazy-rate__half {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+  color: #f7ba2a;
+}
+
+.crazy-rate__item.is-half .crazy-rate__void {
+  color: var(--color-border);
+}
+
+/* Icon wrapper */
+.crazy-rate__icon {
+  display: inline-flex;
+  position: relative;
+}
+
+/* Text */
+.crazy-rate__text {
+  margin-left: 8px;
+  font-size: 14px;
+  color: var(--color-text);
+  line-height: 1;
+}

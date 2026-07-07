@@ -75,3 +75,9 @@ export type { DropdownProps } from '../dropdown';
 
 export { Steps, Step } from '../steps';
 export type { StepsProps, StepProps, StepStatus } from '../steps';
+
+export { Loading } from '../loading';
+export type { LoadingProps } from '../loading';
+
+export { Rate } from '../rate';
+export type { RateProps } from '../rate';

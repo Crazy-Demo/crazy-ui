@@ -54,6 +54,6 @@ export const formItemProps = {
 } as const;
 
 export const formEmits = {
-  submit: (model: Record<string, any>) => true,
-  validate: (prop: string, valid: boolean, message: string) => true,
+  submit: (_model: Record<string, any>) => true,
+  validate: (_prop: string, _valid: boolean, _message: string) => true,
 };

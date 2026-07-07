@@ -28,6 +28,6 @@ export type TagProps = {
 };
 
 export const tagEmits = {
-  close: (event: MouseEvent) => true,
-  click: (event: MouseEvent) => true,
+  close: (_event: MouseEvent) => true,
+  click: (_event: MouseEvent) => true,
 };

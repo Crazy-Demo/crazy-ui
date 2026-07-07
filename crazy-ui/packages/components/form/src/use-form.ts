@@ -5,7 +5,7 @@
 import { reactive, provide, toRef, type InjectionKey } from 'vue';
 import { useNamespace } from '@crazy-ui/hooks';
 import { formInjectionKey } from '@crazy-ui/core';
-import type { FormRule, FormRules, FormContext } from './types';
+import type { FormRules, FormContext } from './types';
 
 export function useForm(props: Record<string, any>, emit: any) {
   const ns = useNamespace('form');

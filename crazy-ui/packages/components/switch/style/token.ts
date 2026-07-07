@@ -1,4 +1,4 @@
-import { semanticColors, semanticSizes } from '@crazy-ui/theme';
+import { semanticColors } from '@crazy-ui/theme';
 
 export const switchTokens = {
   switchWidth: '40px',

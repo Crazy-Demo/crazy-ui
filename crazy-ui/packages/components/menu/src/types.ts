@@ -41,13 +41,13 @@ export const menuItemGroupProps = {
 } as const;
 
 export const menuEmits = {
-  'update:active': (value: string | number) => true,
-  change: (value: string | number) => true,
-  open: (index: string | number) => true,
-  close: (index: string | number) => true,
-  select: (index: string | number) => true,
+  'update:active': (_value: string | number) => true,
+  change: (_value: string | number) => true,
+  open: (_index: string | number) => true,
+  close: (_index: string | number) => true,
+  select: (_index: string | number) => true,
 };
 
 export const menuItemEmits = {
-  click: (event: MouseEvent) => true,
+  click: (_event: MouseEvent) => true,
 };

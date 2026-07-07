@@ -7,7 +7,7 @@ export function useComposition() {
     isComposing.value = true;
   }
 
-  function handleCompositionEnd(event: CompositionEvent) {
+  function handleCompositionEnd(_event: CompositionEvent) {
     isComposing.value = false;
   }
 

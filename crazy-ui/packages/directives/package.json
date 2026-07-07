@@ -9,16 +9,22 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
+    },
+    "./loading": {
+      "types": "./dist/loading.d.ts",
+      "import": "./dist/loading.js"
     }
   },
   "scripts": {
     "build": "tsc",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "vitest"
   },
   "peerDependencies": {
     "vue": "^3.5.0"
   },
   "dependencies": {
+    "@crazy-ui/components": "workspace:*",
     "@crazy-ui/hooks": "workspace:*"
   },
   "devDependencies": {

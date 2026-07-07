@@ -1,4 +1,4 @@
-import { computed, onMounted, onBeforeUnmount, toRef, type Ref } from 'vue';
+import { computed, onMounted, onBeforeUnmount, toRef } from 'vue';
 import { useFormItem, useId } from '@crazy-ui/hooks';
 import type { ComponentSize } from '@crazy-ui/core';
 

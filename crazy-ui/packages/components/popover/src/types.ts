@@ -24,7 +24,7 @@ export type PopoverProps = {
 };
 
 export const popoverEmits = {
-  'update:visible': (val: boolean) => true,
+  'update:visible': (_val: boolean) => true,
   show: () => true,
   hide: () => true,
 };

@@ -5,7 +5,7 @@
  * with component-level overrides if needed.
  */
 
-import { semanticColors, semanticSizes } from '@crazy-ui/theme';
+import { semanticColors } from '@crazy-ui/theme';
 
 export const menuTokens = {
   // Item height

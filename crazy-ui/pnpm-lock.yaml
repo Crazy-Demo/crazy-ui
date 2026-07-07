@@ -88,6 +88,9 @@ importers:
 
   packages/directives:
     dependencies:
+      '@crazy-ui/components':
+        specifier: workspace:*
+        version: link:../components
       '@crazy-ui/hooks':
         specifier: workspace:*
         version: link:../hooks

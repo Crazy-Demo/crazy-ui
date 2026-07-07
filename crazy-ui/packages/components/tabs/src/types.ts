@@ -35,11 +35,11 @@ export const tabPaneProps = {
 } as const;
 
 export const tabsEmits = {
-  'update:active': (value: string | number) => true,
-  change: (value: string | number) => true,
-  close: (name: string | number) => true,
+  'update:active': (_value: string | number) => true,
+  change: (_value: string | number) => true,
+  close: (_name: string | number) => true,
   add: () => true,
-  'tab-click': (name: string | number, event: MouseEvent) => true,
+  'tab-click': (_name: string | number, _event: MouseEvent) => true,
 };
 
 export interface TabPaneState {

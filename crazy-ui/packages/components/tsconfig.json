@@ -7,8 +7,8 @@
     "jsx": "preserve",
     "lib": ["ES2023", "DOM", "DOM.Iterable"]
   },
-  "include": ["src/**/*", "button/**/*", "input/**/*", "checkbox/**/*", "input-number/**/*", "form/**/*", "dialog/**/*", "tooltip/**/*", "popover/**/*", "tag/**/*", "badge/**/*", "space/**/*", "divider/**/*", "pagination/**/*", "breadcrumb/**/*", "card/**/*", "collapse/**/*", "drawer/**/*", "vue-shim.d.ts"],
-  "exclude": ["node_modules", "dist", "**/tests/**"],
+  "include": ["src/**/*", "_shared/**/*", "button/**/*", "input/**/*", "checkbox/**/*", "input-number/**/*", "select/**/*", "menu/**/*", "radio/**/*", "switch/**/*", "tabs/**/*", "form/**/*", "dialog/**/*", "tooltip/**/*", "popover/**/*", "tag/**/*", "badge/**/*", "space/**/*", "divider/**/*", "pagination/**/*", "breadcrumb/**/*", "card/**/*", "collapse/**/*", "drawer/**/*", "progress/**/*", "dropdown/**/*", "steps/**/*", "loading/**/*", "rate/**/*", "vue-shim.d.ts"],
+  "exclude": ["node_modules", "dist", "**/tests/**", "**/__tests__/**"],
   "references": [
     { "path": "../core" },
     { "path": "../theme" }

@@ -16,8 +16,8 @@ export const dropdownProps = {
 } as const;
 
 export const dropdownEmits = {
-  'update:modelValue': (value: boolean) => true,
-  'visible-change': (visible: boolean) => true,
+  'update:modelValue': (_value: boolean) => true,
+  'visible-change': (_visible: boolean) => true,
 };
 
 export type DropdownProps = {
