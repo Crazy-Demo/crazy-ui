@@ -7,7 +7,7 @@
     "jsx": "preserve",
     "lib": ["ES2023", "DOM", "DOM.Iterable"]
   },
-  "include": ["src/**/*", "_shared/**/*", "button/**/*", "input/**/*", "checkbox/**/*", "input-number/**/*", "select/**/*", "menu/**/*", "radio/**/*", "switch/**/*", "tabs/**/*", "form/**/*", "dialog/**/*", "tooltip/**/*", "popover/**/*", "tag/**/*", "badge/**/*", "space/**/*", "divider/**/*", "pagination/**/*", "breadcrumb/**/*", "card/**/*", "collapse/**/*", "drawer/**/*", "progress/**/*", "dropdown/**/*", "steps/**/*", "loading/**/*", "rate/**/*", "vue-shim.d.ts"],
+  "include": ["src/**/*", "_shared/**/*", "button/**/*", "input/**/*", "checkbox/**/*", "input-number/**/*", "select/**/*", "menu/**/*", "radio/**/*", "switch/**/*", "tabs/**/*", "form/**/*", "dialog/**/*", "tooltip/**/*", "popover/**/*", "tag/**/*", "badge/**/*", "space/**/*", "divider/**/*", "pagination/**/*", "breadcrumb/**/*", "card/**/*", "collapse/**/*", "drawer/**/*", "progress/**/*", "dropdown/**/*", "steps/**/*", "loading/**/*", "rate/**/*", "avatar/**/*", "empty/**/*", "alert/**/*", "row/**/*", "col/**/*", "skeleton/**/*", "layout/**/*", "message/**/*", "notification/**/*", "table/**/*", "vue-shim.d.ts"],
   "exclude": ["node_modules", "dist", "**/tests/**", "**/__tests__/**"],
   "references": [
     { "path": "../core" },

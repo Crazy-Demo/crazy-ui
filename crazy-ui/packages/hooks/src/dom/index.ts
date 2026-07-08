@@ -1,2 +1,2 @@
-// DOM hooks — 第二阶段实现
-// useResizeObserver, useFocus, useIntersectionObserver
+export { useResizeObserver } from './use-resize-observer/use-resize-observer';
+export type { UseResizeObserverOptions } from './use-resize-observer/use-resize-observer';

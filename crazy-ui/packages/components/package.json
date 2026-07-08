@@ -144,13 +144,63 @@
       "types": "./dist/rate/index.d.ts",
       "import": "./dist/rate/index.js"
     },
-    "./rate/style": "./dist/rate/style/index.css"
+    "./rate/style": "./dist/rate/style/index.css",
+    "./avatar": {
+      "types": "./dist/avatar/index.d.ts",
+      "import": "./dist/avatar/index.js"
+    },
+    "./avatar/style": "./dist/avatar/style/index.css",
+    "./empty": {
+      "types": "./dist/empty/index.d.ts",
+      "import": "./dist/empty/index.js"
+    },
+    "./empty/style": "./dist/empty/style/index.css",
+    "./alert": {
+      "types": "./dist/alert/index.d.ts",
+      "import": "./dist/alert/index.js"
+    },
+    "./alert/style": "./dist/alert/style/index.css",
+    "./row": {
+      "types": "./dist/row/index.d.ts",
+      "import": "./dist/row/index.js"
+    },
+    "./row/style": "./dist/row/style/index.css",
+    "./col": {
+      "types": "./dist/col/index.d.ts",
+      "import": "./dist/col/index.js"
+    },
+    "./col/style": "./dist/col/style/index.css",
+    "./skeleton": {
+      "types": "./dist/skeleton/index.d.ts",
+      "import": "./dist/skeleton/index.js"
+    },
+    "./skeleton/style": "./dist/skeleton/style/index.css",
+    "./layout": {
+      "types": "./dist/layout/index.d.ts",
+      "import": "./dist/layout/index.js"
+    },
+    "./layout/style": "./dist/layout/style/index.css",
+    "./message": {
+      "types": "./dist/message/index.d.ts",
+      "import": "./dist/message/index.js"
+    },
+    "./message/style": "./dist/message/style/index.css",
+    "./notification": {
+      "types": "./dist/notification/index.d.ts",
+      "import": "./dist/notification/index.js"
+    },
+    "./notification/style": "./dist/notification/style/index.css",
+    "./table": {
+      "types": "./dist/table/index.d.ts",
+      "import": "./dist/table/index.js"
+    },
+    "./table/style": "./dist/table/style/index.css"
   },
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc --project tsconfig.json && cp -r button/style dist/button/ && cp -r input/style dist/input/ && cp -r input-number/style dist/input-number/ && cp -r select/style dist/select/ && cp -r menu/style dist/menu/ && cp -r tabs/style dist/tabs/ && cp -r form/style dist/form/ && cp -r dialog/style dist/dialog/ && cp -r tooltip/style dist/tooltip/ && cp -r popover/style dist/popover/ && cp -r tag/style dist/tag/ && cp -r badge/style dist/badge/ && cp -r space/style dist/space/ && cp -r divider/style dist/divider/ && cp -r pagination/style dist/pagination/ && cp -r breadcrumb/style dist/breadcrumb/ && cp -r card/style dist/card/ && cp -r collapse/style dist/collapse/ && cp -r drawer/style dist/drawer/ && cp -r progress/style dist/progress/ && cp -r dropdown/style dist/dropdown/ && cp -r steps/style dist/steps/ && cp -r loading/style dist/loading/ && cp -r rate/style dist/rate/",
+    "build": "tsc --project tsconfig.json && cp -r button/style dist/button/ && cp -r input/style dist/input/ && cp -r input-number/style dist/input-number/ && cp -r select/style dist/select/ && cp -r menu/style dist/menu/ && cp -r tabs/style dist/tabs/ && cp -r form/style dist/form/ && cp -r dialog/style dist/dialog/ && cp -r tooltip/style dist/tooltip/ && cp -r popover/style dist/popover/ && cp -r tag/style dist/tag/ && cp -r badge/style dist/badge/ && cp -r space/style dist/space/ && cp -r divider/style dist/divider/ && cp -r pagination/style dist/pagination/ && cp -r breadcrumb/style dist/breadcrumb/ && cp -r card/style dist/card/ && cp -r collapse/style dist/collapse/ && cp -r drawer/style dist/drawer/ && cp -r progress/style dist/progress/ && cp -r dropdown/style dist/dropdown/ && cp -r steps/style dist/steps/ && cp -r loading/style dist/loading/ && cp -r rate/style dist/rate/ && cp -r avatar/style dist/avatar/ && cp -r empty/style dist/empty/ && cp -r alert/style dist/alert/ && cp -r row/style dist/row/ && cp -r col/style dist/col/ && cp -r skeleton/style dist/skeleton/ && cp -r layout/style dist/layout/ && cp -r message/style dist/message/ && cp -r notification/style dist/notification/ && cp -r table/style dist/table/",
     "typecheck": "tsc --noEmit",
     "test": "vitest"
   },

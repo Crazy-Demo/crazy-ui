@@ -1,0 +1,117 @@
+.crazy-alert {
+  display: flex;
+  align-items: flex-start;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  line-height: 1.5;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.crazy-alert.is-center {
+  align-items: center;
+}
+
+/* Types - Light effect */
+.crazy-alert--info.crazy-alert--light {
+  background: var(--color-primary-bg, #e6f0ff);
+  border-color: var(--color-primary-border, #b3d4ff);
+  color: var(--color-text, #333);
+}
+
+.crazy-alert--success.crazy-alert--light {
+  background: var(--color-success-bg, #e6fff0);
+  border-color: var(--color-success-border, #b3ffcc);
+  color: var(--color-text, #333);
+}
+
+.crazy-alert--warning.crazy-alert--light {
+  background: var(--color-warning-bg, #fff8e6);
+  border-color: var(--color-warning-border, #ffe6b3);
+  color: var(--color-text, #333);
+}
+
+.crazy-alert--error.crazy-alert--light {
+  background: var(--color-danger-bg, #ffe6e6);
+  border-color: var(--color-danger-border, #ffb3b3);
+  color: var(--color-text, #333);
+}
+
+/* Types - Dark effect */
+.crazy-alert--info.crazy-alert--dark {
+  background: var(--color-primary, #409eff);
+  border-color: var(--color-primary, #409eff);
+  color: #fff;
+}
+
+.crazy-alert--success.crazy-alert--dark {
+  background: var(--color-success, #67c23a);
+  border-color: var(--color-success, #67c23a);
+  color: #fff;
+}
+
+.crazy-alert--warning.crazy-alert--dark {
+  background: var(--color-warning, #e6a23c);
+  border-color: var(--color-warning, #e6a23c);
+  color: #fff;
+}
+
+.crazy-alert--error.crazy-alert--dark {
+  background: var(--color-danger, #f56c6c);
+  border-color: var(--color-danger, #f56c6c);
+  color: #fff;
+}
+
+.crazy-alert__icon {
+  margin-right: 8px;
+  font-size: 16px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.crazy-alert__content {
+  flex: 1;
+}
+
+.crazy-alert__title {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.crazy-alert__title + .crazy-alert__description {
+  margin: 0;
+}
+
+.crazy-alert__description {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.crazy-alert__close {
+  margin-left: 12px;
+  cursor: pointer;
+  font-size: 12px;
+  opacity: 0.6;
+  flex-shrink: 0;
+  line-height: 1;
+  padding: 2px;
+}
+
+.crazy-alert__close:hover {
+  opacity: 1;
+}
+
+/* Transition */
+.alert-fade-enter-active,
+.alert-fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.alert-fade-enter-from,
+.alert-fade-leave-to {
+  opacity: 0;
+}
