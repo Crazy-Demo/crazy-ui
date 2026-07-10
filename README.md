@@ -11,6 +11,49 @@
 
 ---
 
+## 📋 项目简介
+
+### 这是什么？
+
+一个**从零自研**的企业级 Vue 3 UI 组件库，对标 Element Plus / Arco Design / Naive UI 的架构质量。不是简单的组件堆砌，而是从架构设计、类型系统、主题引擎到工程化体系的完整实践。
+
+### 解决了什么问题？
+
+现有开源组件库存在以下痛点，本项目针对性解决：
+
+| 痛点 | 本项目的解决方案 |
+|------|-----------------|
+| 框架强绑定，无法跨框架复用核心逻辑 | **框架无关 Core 层**：类型定义 + 注入键独立于 Vue，后续可扩展 React/Svelte 适配层 |
+| 主题定制粒度粗，换肤困难 | **三层 Token 体系**：Primitive → Semantic → Component，CSS 变量驱动的任意层级定制 |
+| 组件逻辑与视图耦合，难以单独测试 | **Composable-first 设计**：每个组件逻辑抽取为独立 hook，Table 拆分为 5 个子 hook 独立可测 |
+| 缺乏严格的类型约束 | **strict: true + noUnusedLocals + noUnusedParameters**，零容忍类型错误 |
+| 浮层组件行为不一致 | **统一浮层体系**：zIndex 计数器 + focusTrap + scrollLock + escapeKey + clickOutside 组合式能力 |
+| Tree-shaking 不彻底 | 每个组件独立 subpath export，按需导入时只打包实际使用的代码 |
+
+### 技术栈与规模
+
+```
+语言：        TypeScript 6.0（严格模式）
+框架：        Vue 3.5 + Composition API
+构建：        Vite + TurboRepo + Changesets
+包管理：      pnpm workspace (Monorepo)
+测试：        Vitest v4 + @vue/test-utils v2（TDD 流程）
+组件数量：    44 个（覆盖基础/表单/导航/反馈/数据展示/布局 6 大类别）
+测试用例：    638 个
+Composables： 17 个（Context 5 + Overlay 7 + State 3 + DOM 2）
+Token 层级：  3 层（Primitive → Semantic → Component）
+Monorepo 包： 9 个（core/theme/hooks/utils/components/directives/vue/icons/build）
+```
+
+### 个人角色与贡献
+
+- **独立完成**全部架构设计、组件开发、测试编写、工程化配置
+- 每一行代码均为手写，非脚手架生成或复制粘贴
+- 每个组件的 API 设计、边界情况处理、无障碍支持均经过独立思考和权衡
+- 形成了一套可复用的**组件库方法论**：分层架构 → Token 体系 → Composable 拆分 → TDD 流程
+
+---
+
 ## 📸 预览
 
 所有组件效果展示：
